@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Browser Check</title>
+</head>
+<body>
+    <script>
+        function detectBrowser() {
+            var isEdge = /Edg/.test(navigator.userAgent);
+            if (!isEdge) {
+                alert('Please install Microsoft Edge to access this app.');
+                window.location.href = 'https://www.microsoft.com/en-us/edge';
+            } else {
+                window.location.href = 'https://apps.powerapps.com/play/e/default-c09afb75-1cf8-46ca-9c5e-0a01bfbd86f2/a/374c309c-44f9-44d7-8544-39a73c4f91aa?tenantId=c09afb75-1cf8-46ca-9c5e-0a01bfbd86f2&hint=7a06e995-c3a2-4a74-b88b-0809b7d4e9a7&sourcetime=1728362874093&source=portal'; // Replace with your PowerApps app link
+            }
+        }
+        detectBrowser();
+    </script>
+</body>
+</html>
